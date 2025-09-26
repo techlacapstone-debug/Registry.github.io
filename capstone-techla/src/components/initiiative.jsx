@@ -1,7 +1,7 @@
 import React from 'react'
 import monitoring from '../assets/monitoring.png'
 import insights from '../assets/insight.png'
-import ai from '../assets/ai.png'
+import ai from '../assets/Ai.png'
 import digitalization from '../assets/digitalization.png'
 import database from '../assets/database-storage.png'
 
