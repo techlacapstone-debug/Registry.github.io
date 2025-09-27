@@ -9,13 +9,13 @@ import database from '../assets/database-storage.png'
 function Initiiative() {
   return (
     <>
-        <div className='h-[25vh] bg-[#E1E6F3] p-[25px] flex flex-col gap-[10px]'>
+        <div className='h-fit bg-[#E1E6F3] pt-[30px] pb-[60px] px-[80px] flex flex-col gap-[20px]'>
             <div>
                 <h1 className='text-[18px] text-center font-medium text-[#007BFF]'>
                     Household Registry Consists of Several Key Components and Initiatives
                 </h1>
             </div>
-            <div className='flex justify-center items-center gap-[107px] mt-[20px] flex-wrap'>
+            <div className='h-auto flex justify-evenly items-center gap-[107px] mt-[20px] flex-wrap'>
                 <div className='h-[120px] w-[170px] flex flex-col gap-[10px]'>
                     <div>
                         <img src={monitoring} className='h-[90px] w-[90px] m-auto'
