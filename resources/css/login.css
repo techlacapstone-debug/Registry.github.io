@@ -1,45 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /*
  * This file contains the custom 16/8/4 grid system
  * for your login page.
 */
 
 /* 1. Set the page background color */
-.login-body {
-    background-color: #E9EBF0; /* The light gray background */
+body {
+    /* The light gray background */
     /* We use min-height to ensure it's always at least the full screen height */
-    min-height: 100vh; 
     box-sizing: border-box; /* Ensures padding/margin are included in height */
 }
 
 /* 2. MOBILE (Default): 4 Columns */
 .login-container {
+     background-color: #fafafa27;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
     display: grid;
     /* 4 columns, 16px gutter (gap) */
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     /* 16px margin (padding on the body) */
-    margin: 16px;
+
 }
 
 .login-left-column {
     /* On mobile, the blue box takes all 4 columns */
     grid-column: span 4;
-    
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( #1d4fd8da, #241092ce), url("/public/images/bg-namayan.png");
     /* These are your styles from before */
-    background-image: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('/images/bg-city.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
     display: flex;
-    align-items: flex-start;
-    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
     color: white;
     font-weight: bold;
-    border: 4px solid #004AAD;
     min-height: 300px; /* Give it some height on mobile */
 }
 
 .login-right-column {
+    height: 100%;
+    width: 100%;
     /* On mobile, the form takes all 4 columns */
     grid-column: span 4;
     display: flex;
@@ -54,11 +65,10 @@
         /* 8 columns, 16px gutter (gap), 16px margin (padding) */
         grid-template-columns: repeat(8, 1fr);
         gap: 16px;
-        margin: 16px;
         /* Make it fill the height, minus the margins */
         min-height: calc(100vh - 32px);
     }
-    
+
     .login-left-column {
         /* On tablet, the blue box takes 4 of 8 columns */
         grid-column: span 4;
@@ -79,11 +89,10 @@
         grid-template-columns: repeat(16, 1fr);
         gap: 16px;
         /* 40px margin (padding) */
-        margin: 40px;
         /* Make it fill the height, minus the margins */
         min-height: calc(100vh - 80px);
     }
-    
+
     .login-left-column {
         /* On desktop, the blue box takes 9 of 16 columns */
         /* (9 is ~56%, close to your 60/40 split) */
@@ -102,8 +111,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.438));
 }
 .login-header-text img {
-    height: 80px;
-    width: 80px;
+    height: 110px;
+    width: 110px;
+
 }
